@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>test-geolocation-keycloak</artifactId>
+    <groupId>mx.com.klar.geolocation</groupId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>server-config</artifactId>
+
+  <name>server-config</name>
+
+  <url>http://www.example.com</url>
+
+  <dependencies>
+    <dependency>
+      <groupId>mx.com.klar.geolocation</groupId>
+      <artifactId>geolocation-service</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-maven-plugin</artifactId>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+</project>
